@@ -1,0 +1,177 @@
+{
+  "nav": {
+    "home": "首页",
+    "events": "比赛列表",
+    "winners": "获奖名单",
+    "map": "比赛地点",
+    "profile": "个人中心",
+    "admin": "管理后台",
+    "login": "登录",
+    "register": "注册",
+    "logout": "退出登录"
+  },
+  "home": {
+    "title": "苏格兰高地运动会",
+    "subtitle": "传承高地传统，展现力量与技艺",
+    "welcome": "欢迎来到苏格兰高地运动会",
+    "description": "高地运动会是苏格兰传统的体育和文化盛会，包括投掷重锤、抛木桩、拔河等多项传统竞技项目。在这里，您可以报名参加比赛，查看比赛详情，了解获奖选手。",
+    "features": {
+      "title": "特色项目",
+      "feature1": "投掷重锤",
+      "feature2": "抛木桩",
+      "feature3": "拔河比赛",
+      "feature4": "高地舞蹈"
+    }
+  },
+  "event": {
+    "title": "比赛项目",
+    "search": "搜索比赛",
+    "searchPlaceholder": "请输入比赛名称",
+    "detail": "比赛详情",
+    "register": "立即报名",
+    "registered": "已报名",
+    "date": "比赛时间",
+    "location": "比赛地点",
+    "participants": "参赛人数",
+    "description": "比赛介绍",
+    "requirements": "参赛要求",
+    "prize": "奖项设置",
+    "status": {
+      "upcoming": "即将开始",
+      "ongoing": "进行中",
+      "finished": "已结束"
+    }
+  },
+  "registration": {
+    "title": "比赛报名",
+    "form": {
+      "name": "姓名",
+      "namePlaceholder": "请输入您的姓名",
+      "age": "年龄",
+      "agePlaceholder": "请输入您的年龄",
+      "gender": "性别",
+      "male": "男",
+      "female": "女",
+      "phone": "联系电话",
+      "phonePlaceholder": "请输入联系电话",
+      "email": "电子邮箱",
+      "emailPlaceholder": "请输入电子邮箱",
+      "experience": "相关经验",
+      "experiencePlaceholder": "请简要描述您的相关经验",
+      "remarks": "备注",
+      "remarksPlaceholder": "其他需要说明的信息"
+    },
+    "submit": "提交报名",
+    "cancel": "取消",
+    "success": "报名成功！",
+    "successMessage": "您的报名申请已提交，请等待审核。"
+  },
+  "profile": {
+    "title": "个人中心",
+    "info": "个人信息",
+    "myRegistrations": "我的报名",
+    "status": {
+      "pending": "待审核",
+      "approved": "已通过",
+      "rejected": "已拒绝"
+    },
+    "viewDetail": "查看详情",
+    "noRegistrations": "暂无报名记录"
+  },
+  "winners": {
+    "title": "获奖名单",
+    "event": "比赛项目",
+    "winner": "获奖者",
+    "rank": "名次",
+    "score": "成绩",
+    "date": "比赛日期",
+    "first": "冠军",
+    "second": "亚军",
+    "third": "季军"
+  },
+  "map": {
+    "title": "比赛地点",
+    "search": "搜索地点",
+    "searchPlaceholder": "请输入地点名称"
+  },
+  "auth": {
+    "login": "登录",
+    "register": "注册",
+    "email": "邮箱",
+    "emailPlaceholder": "请输入邮箱",
+    "password": "密码",
+    "passwordPlaceholder": "请输入密码",
+    "confirmPassword": "确认密码",
+    "confirmPasswordPlaceholder": "请再次输入密码",
+    "name": "姓名",
+    "namePlaceholder": "请输入姓名",
+    "rememberMe": "记住我",
+    "forgotPassword": "忘记密码？",
+    "noAccount": "还没有账号？",
+    "hasAccount": "已有账号？",
+    "loginNow": "立即登录",
+    "registerNow": "立即注册",
+    "loginSuccess": "登录成功",
+    "registerSuccess": "注册成功",
+    "logoutSuccess": "退出成功"
+  },
+  "admin": {
+    "dashboard": "控制面板",
+    "events": "比赛管理",
+    "registrations": "报名管理",
+    "winners": "获奖管理",
+    "add": "添加",
+    "edit": "编辑",
+    "delete": "删除",
+    "save": "保存",
+    "cancel": "取消",
+    "confirm": "确认",
+    "deleteConfirm": "确认删除吗？",
+    "deleteSuccess": "删除成功",
+    "saveSuccess": "保存成功",
+    "statistics": {
+      "totalEvents": "比赛总数",
+      "totalRegistrations": "报名总数",
+      "totalWinners": "获奖人数",
+      "activeEvents": "进行中的比赛"
+    },
+    "eventForm": {
+      "name": "比赛名称",
+      "namePlaceholder": "请输入比赛名称",
+      "date": "比赛时间",
+      "location": "比赛地点",
+      "locationPlaceholder": "请输入比赛地点",
+      "description": "比赛介绍",
+      "descriptionPlaceholder": "请输入比赛介绍",
+      "maxParticipants": "最大参赛人数",
+      "status": "比赛状态"
+    },
+    "registrationForm": {
+      "status": "审核状态",
+      "approve": "通过",
+      "reject": "拒绝"
+    },
+    "winnerForm": {
+      "event": "比赛项目",
+      "participant": "参赛者",
+      "rank": "名次",
+      "score": "成绩",
+      "scorePlaceholder": "请输入成绩"
+    }
+  },
+  "common": {
+    "search": "搜索",
+    "reset": "重置",
+    "submit": "提交",
+    "cancel": "取消",
+    "confirm": "确认",
+    "back": "返回",
+    "loading": "加载中...",
+    "noData": "暂无数据",
+    "operation": "操作",
+    "success": "成功",
+    "error": "错误",
+    "language": "语言"
+  }
+}
+

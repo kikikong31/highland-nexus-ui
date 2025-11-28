@@ -1,0 +1,177 @@
+{
+  "nav": {
+    "home": "Home",
+    "events": "Events",
+    "winners": "Winners",
+    "map": "Locations",
+    "profile": "Profile",
+    "admin": "Admin",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout"
+  },
+  "home": {
+    "title": "Highland Games",
+    "subtitle": "Preserving Highland Traditions, Showcasing Strength and Skill",
+    "welcome": "Welcome to Highland Games",
+    "description": "The Highland Games is a traditional Scottish sporting and cultural festival, including hammer throw, caber toss, tug of war and other traditional competitive events. Here you can register for competitions, view event details, and learn about winners.",
+    "features": {
+      "title": "Featured Events",
+      "feature1": "Hammer Throw",
+      "feature2": "Caber Toss",
+      "feature3": "Tug of War",
+      "feature4": "Highland Dancing"
+    }
+  },
+  "event": {
+    "title": "Event Name",
+    "search": "Search Events",
+    "searchPlaceholder": "Enter event name",
+    "detail": "Event Details",
+    "register": "Register Now",
+    "registered": "Registered",
+    "date": "Event Date",
+    "location": "Location",
+    "participants": "Participants",
+    "description": "Description",
+    "requirements": "Requirements",
+    "prize": "Prizes",
+    "status": {
+      "upcoming": "Upcoming",
+      "ongoing": "Ongoing",
+      "finished": "Finished"
+    }
+  },
+  "registration": {
+    "title": "Event Registration",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Enter your name",
+      "age": "Age",
+      "agePlaceholder": "Enter your age",
+      "gender": "Gender",
+      "male": "Male",
+      "female": "Female",
+      "phone": "Phone",
+      "phonePlaceholder": "Enter phone number",
+      "email": "Email",
+      "emailPlaceholder": "Enter email",
+      "experience": "Experience",
+      "experiencePlaceholder": "Briefly describe your experience",
+      "remarks": "Remarks",
+      "remarksPlaceholder": "Additional information"
+    },
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "success": "Registration Successful!",
+    "successMessage": "Your registration has been submitted and is pending review."
+  },
+  "profile": {
+    "title": "Profile",
+    "info": "Personal Information",
+    "myRegistrations": "My Registrations",
+    "status": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    },
+    "viewDetail": "View Details",
+    "noRegistrations": "No registrations yet"
+  },
+  "winners": {
+    "title": "Winners List",
+    "event": "Event",
+    "winner": "Winner",
+    "rank": "Rank",
+    "score": "Score",
+    "date": "Date",
+    "first": "1st Place",
+    "second": "2nd Place",
+    "third": "3rd Place"
+  },
+  "map": {
+    "title": "Event Locations",
+    "search": "Search Location",
+    "searchPlaceholder": "Enter location name"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "emailPlaceholder": "Enter email",
+    "password": "Password",
+    "passwordPlaceholder": "Enter password",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Enter password again",
+    "name": "Name",
+    "namePlaceholder": "Enter name",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "loginNow": "Login now",
+    "registerNow": "Register now",
+    "loginSuccess": "Login successful",
+    "registerSuccess": "Registration successful",
+    "logoutSuccess": "Logout successful"
+  },
+  "admin": {
+    "dashboard": "Dashboard",
+    "events": "Event Management",
+    "registrations": "Registration Management",
+    "winners": "Winner Management",
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "deleteConfirm": "Are you sure to delete?",
+    "deleteSuccess": "Deleted successfully",
+    "saveSuccess": "Saved successfully",
+    "statistics": {
+      "totalEvents": "Total Events",
+      "totalRegistrations": "Total Registrations",
+      "totalWinners": "Total Winners",
+      "activeEvents": "Active Events"
+    },
+    "eventForm": {
+      "name": "Event Name",
+      "namePlaceholder": "Enter event name",
+      "date": "Event Date",
+      "location": "Location",
+      "locationPlaceholder": "Enter location",
+      "description": "Description",
+      "descriptionPlaceholder": "Enter description",
+      "maxParticipants": "Max Participants",
+      "status": "Status"
+    },
+    "registrationForm": {
+      "status": "Status",
+      "approve": "Approve",
+      "reject": "Reject"
+    },
+    "winnerForm": {
+      "event": "Event",
+      "participant": "Participant",
+      "rank": "Rank",
+      "score": "Score",
+      "scorePlaceholder": "Enter score"
+    }
+  },
+  "common": {
+    "search": "Search",
+    "reset": "Reset",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "back": "Back",
+    "loading": "Loading...",
+    "noData": "No data",
+    "operation": "Operation",
+    "success": "Success",
+    "error": "Error",
+    "language": "Language"
+  }
+}
+
