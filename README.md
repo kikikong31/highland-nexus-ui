@@ -34,6 +34,8 @@ npm run dev
 
 # 构建生产版本
 npm run build
+
+查看后端对应启动的端口到：highland-nexus-ui\src\api\config.js中进行修改
 ```
 
 ## 默认账号
