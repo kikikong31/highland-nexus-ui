@@ -1,11 +1,11 @@
 import apiClient from './axios'
 
 /**
- * 管理员相关 API
+ * Administrator-related APIs
  */
 export const adminApi = {
   /**
-   * 获取管理员统计数据
+   * Get administrator statistics
    */
   getStatistics() {
     return apiClient.get('/api/admin/AdminStatistics')

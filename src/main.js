@@ -13,12 +13,12 @@ import './assets/styles/main.scss'
 
 const app = createApp(App)
 
-// 注册所有Element Plus图标
+// Register Element Plus icons globally
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
   app.component(key, component)
 }
 
-// 根据当前语言设置Element Plus的语言
+// Set locale based on user preference
 const locale = localStorage.getItem('language') === 'en' ? en : zhCn
 
 app.use(createPinia())

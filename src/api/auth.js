@@ -2,12 +2,12 @@ import apiClient from './axios'
 import { API_ENDPOINTS } from './config'
 
 export const authApi = {
-  // 登录
+  // login
   login(credentials) {
     return apiClient.post(API_ENDPOINTS.LOGIN, credentials)
   },
 
-  // 注册
+  // register
   register(userData) {
     return apiClient.post(API_ENDPOINTS.REGISTER, userData)
   }

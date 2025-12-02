@@ -100,17 +100,17 @@ const router = createRouter({
   routes
 })
 
-// 路由守卫
+// Route Guard
 router.beforeEach((to, from, next) => {
   const authStore = useAuthStore()
   
-  // 检查是否需要登录
+  // Check if route requires authentication
   if (to.meta.requiresAuth && !authStore.isLoggedIn) {
     next({ name: 'Login', query: { redirect: to.fullPath } })
     return
   }
   
-  // 检查是否需要管理员权限
+  // Check if route requires admin privileges
   if (to.meta.requiresAdmin && !authStore.isAdmin) {
     next({ name: 'Home' })
     return

@@ -1,37 +1,37 @@
 import apiClient from './axios'
 
 export const winnersApi = {
-  // 获取所有获奖记录
+  // All winners list
   getAllWinners() {
     return apiClient.get('/api/winners')
   },
 
-  // 获取比赛的获奖记录
+  // Get winners by event ID
   getEventWinners(eventId) {
     return apiClient.get(`/api/winners/event/${eventId}`)
   },
 
-  // 获取比赛的参与者列表（用于添加获奖者时选择）
+  // Get event participants for winner selection
   getEventParticipants(eventId) {
     return apiClient.get(`/api/winners/event/${eventId}/participants`)
   },
 
-  // 获取获奖记录详情
+  // Get winner by ID
   getWinnerById(id) {
     return apiClient.get(`/api/winners/${id}`)
   },
 
-  // 创建获奖记录（管理员）
+  // Create new winner record (admin)
   createWinner(winnerData) {
     return apiClient.post('/api/winners', winnerData)
   },
 
-  // 更新获奖记录（管理员）
+  // Update winner record (admin)
   updateWinner(id, winnerData) {
     return apiClient.put(`/api/winners/${id}`, winnerData)
   },
 
-  // 删除获奖记录（管理员）
+  // Delete winner record (admin)
   deleteWinner(id) {
     return apiClient.delete(`/api/winners/${id}`)
   }

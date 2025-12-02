@@ -9,12 +9,12 @@ export const useAuthStore = defineStore('auth', () => {
   const isLoggedIn = computed(() => !!token.value)
   const isAdmin = computed(() => user.value?.role === 'admin')
 
-  // 登录
+  // Login
   async function login(credentials) {
     try {
       const response = await authApi.login(credentials)
       
-      // 检查统一响应格式
+      // Check unified response format
       if (response.success && response.data) {
         user.value = {
           id: response.data.id,
@@ -29,7 +29,7 @@ export const useAuthStore = defineStore('auth', () => {
         
         return { success: true }
       } else {
-        // 登录失败，返回错误消息
+        // Failed to login, return error message
         return { 
           success: false, 
           message: response.message || '登录失败'
@@ -43,12 +43,12 @@ export const useAuthStore = defineStore('auth', () => {
     }
   }
 
-  // 注册
+  //  Register
   async function register(userData) {
     try {
       const response = await authApi.register(userData)
       
-      // 检查统一响应格式
+      // Check unified response format
       if (response.success && response.data) {
         user.value = {
           id: response.data.id,
@@ -63,7 +63,7 @@ export const useAuthStore = defineStore('auth', () => {
         
         return { success: true }
       } else {
-        // 注册失败，返回错误消息
+        // Failed to register, return error message
         return { 
           success: false, 
           message: response.message || '注册失败'
@@ -77,7 +77,7 @@ export const useAuthStore = defineStore('auth', () => {
     }
   }
 
-  // 登出
+  // Logout
   function logout() {
     user.value = null
     token.value = null
@@ -85,7 +85,7 @@ export const useAuthStore = defineStore('auth', () => {
     localStorage.removeItem('user')
   }
 
-  // 初始化用户信息
+  // Initialize user from localStorage
   function initUser() {
     const savedUser = localStorage.getItem('user')
     if (savedUser && token.value) {
@@ -93,7 +93,7 @@ export const useAuthStore = defineStore('auth', () => {
     }
   }
 
-  // 初始化
+  // Initialize on store creation
   initUser()
 
   return {

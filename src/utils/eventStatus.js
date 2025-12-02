@@ -1,13 +1,13 @@
 /**
- * 根据比赛日期计算比赛状态
- * @param {string} eventDate - 比赛日期 (YYYY-MM-DD 或 ISO 格式)
+ * Calculate the competition status based on the competition date
+ * @param {string} eventDate -  Event date in 'YYYY-MM-DD' format
  * @returns {string} - 'upcoming' | 'ongoing' | 'finished'
  */
 export function calculateEventStatus(eventDate) {
   if (!eventDate) return 'upcoming'
   
   const today = new Date()
-  today.setHours(0, 0, 0, 0) // 重置时间为当天开始
+  today.setHours(0, 0, 0, 0) // ReSet to midnight
   
   const event = new Date(eventDate)
   event.setHours(0, 0, 0, 0)
@@ -16,21 +16,21 @@ export function calculateEventStatus(eventDate) {
   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24))
   
   if (diffDays < 0) {
-    // 比赛日期已过
+    // Event has ended
     return 'finished'
-  } else if (diffDays === 0) {
-    // 今天是比赛日
+  } else if (diffDays === 0) {e
+    // The event is ongoing today
     return 'ongoing'
   } else {
-    // 比赛还未开始
+    // Event is upcoming
     return 'upcoming'
   }
 }
 
 /**
- * 为事件对象添加计算后的状态
- * @param {Object} event - 事件对象
- * @returns {Object} - 带有 computedStatus 的事件对象
+ * Add the calculated status for a single event
+ * @param {Object} event - Event object
+ * @returns {Object} - Event object with computedStatus property
  */
 export function enrichEventWithStatus(event) {
   return {
@@ -40,18 +40,18 @@ export function enrichEventWithStatus(event) {
 }
 
 /**
- * 为事件数组批量添加计算后的状态
- * @param {Array} events - 事件数组
- * @returns {Array} - 带有 computedStatus 的事件数组
+ * Batch add the calculated states to the event array
+ * @param {Array} events - Event array
+ * @returns {Array} - Event array with computedStatus propertys
  */
 export function enrichEventsWithStatus(events) {
   return events.map(enrichEventWithStatus)
 }
 
 /**
- * 过滤即将开始的比赛
- * @param {Array} events - 事件数组
- * @returns {Array} - 即将开始的比赛数组（按日期排序）
+ * The upcoming matches will be filtered.
+ * @param {Array} events - Event array
+ * @returns {Array} - Upcoming event array sorted by date ascending
  */
 export function getUpcomingEvents(events) {
   return enrichEventsWithStatus(events)
@@ -60,9 +60,9 @@ export function getUpcomingEvents(events) {
 }
 
 /**
- * 过滤进行中的比赛
- * @param {Array} events - 事件数组
- * @returns {Array} - 进行中的比赛数组
+ * Filter ongoing competitions
+ * @param {Array} events - Event array
+ * @returns {Array} - Ongoing event array
  */
 export function getOngoingEvents(events) {
   return enrichEventsWithStatus(events)
@@ -70,9 +70,9 @@ export function getOngoingEvents(events) {
 }
 
 /**
- * 过滤已结束的比赛
- * @param {Array} events - 事件数组
- * @returns {Array} - 已结束的比赛数组（按日期倒序）
+ * Filter finished competitions
+ * @param {Array} events - Event array
+ * @returns {Array} - Finished event array sorted by date descending
  */
 export function getFinishedEvents(events) {
   return enrichEventsWithStatus(events)

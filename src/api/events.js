@@ -1,32 +1,32 @@
 import apiClient from './axios'
 
 export const eventsApi = {
-  // 获取比赛列表（分页、搜索、过滤）
+  // Get list of events with optional filters
   getEvents(params = {}) {
     return apiClient.get('/api/events', { params })
   },
 
-  // 获取即将开始的比赛（用于首页）
+  // Get upcoming events (limit to 3 by default)
   getUpcomingEvents(limit = 3) {
     return apiClient.get('/api/events/upcoming', { params: { limit } })
   },
 
-  // 获取比赛详情
+  // Get event by ID
   getEventById(id) {
     return apiClient.get(`/api/events/${id}`)
   },
 
-  // 创建比赛（管理员）
+  // Create new event (admin)
   createEvent(eventData) {
     return apiClient.post('/api/events', eventData)
   },
 
-  // 更新比赛（管理员）
+  // Update event (admin)
   updateEvent(id, eventData) {
     return apiClient.put(`/api/events/${id}`, eventData)
   },
 
-  // 删除比赛（管理员）
+  // Delete event (admin)
   deleteEvent(id) {
     return apiClient.delete(`/api/events/${id}`)
   }

@@ -1,4 +1,4 @@
-// 主样式文件
+// Main SCSS file for global styles
 :root {
   --primary-color: #005eb8;
   --secondary-color: #00a5e0;
@@ -25,7 +25,7 @@ body {
   background-color: var(--bg-secondary);
 }
 
-// 通用容器
+// Container styles
 .container {
   width: 100%;
   max-width: 1200px;
@@ -40,7 +40,7 @@ body {
   margin: 0 auto;
 }
 
-// 卡片样式
+// Card style
 .card {
   background: var(--bg-primary);
   border-radius: 8px;
@@ -49,7 +49,7 @@ body {
   margin-bottom: 20px;
 }
 
-// 按钮样式
+// Button styles
 .btn-primary {
   background-color: var(--primary-color);
   color: white;
@@ -64,7 +64,7 @@ body {
   }
 }
 
-// 标题样式
+// Title styles
 .page-header {
   margin-bottom: 20px;
 
@@ -90,7 +90,7 @@ body {
   color: var(--text-primary);
 }
 
-// 响应式
+// Responsive styles
 @media (max-width: 768px) {
   .container {
     padding: 0 15px;
@@ -109,7 +109,7 @@ body {
   }
 }
 
-// Element Plus 自定义样式
+// Element Plus Customizations
 .el-header {
   padding: 0 !important;
 }
@@ -118,7 +118,7 @@ body {
   padding: 20px 0 !important;
 }
 
-// 过渡动画
+// Transition styles
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.3s;

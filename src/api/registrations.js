@@ -1,32 +1,32 @@
 import apiClient from './axios'
 
 export const registrationsApi = {
-  // 获取我的报名
+  //  Get my registrations
   getMyRegistrations() {
     return apiClient.get('/api/registrations/my')
   },
 
-  // 创建报名
+  // Create new registration
   createRegistration(registrationData) {
     return apiClient.post('/api/registrations', registrationData)
   },
 
-  // 获取所有报名（管理员）
+  // Get all registrations (admin)
   getAllRegistrations() {
     return apiClient.get('/api/registrations')
   },
 
-  // 获取比赛的所有报名（管理员）
+  // Get registrations by event ID (admin)
   getEventRegistrations(eventId) {
     return apiClient.get(`/api/registrations/event/${eventId}`)
   },
 
-  // 更新报名状态（管理员）
+  //  Update registration status (admin)
   updateRegistrationStatus(id, status) {
     return apiClient.put(`/api/registrations/${id}/status`, { status })
   },
 
-  // 删除报名（管理员）
+  // Delete registration
   deleteRegistration(id) {
     return apiClient.delete(`/api/registrations/${id}`)
   }

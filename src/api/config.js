@@ -1,25 +1,25 @@
-// API 配置
+// API base URL configuration
 export const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5218'
 
 export const API_ENDPOINTS = {
-  // 认证相关
+  // Authentication
   LOGIN: '/api/auth/login',
   REGISTER: '/api/auth/register',
   
-  // 比赛相关
+  // Events DEtails
   EVENTS: '/api/events',
   EVENT_DETAIL: (id) => `/api/events/${id}`,
   
-  // 报名相关
+  // Event Registrations
   REGISTRATIONS: '/api/registrations',
   MY_REGISTRATIONS: '/api/registrations/my',
   EVENT_REGISTRATIONS: (eventId) => `/api/registrations/event/${eventId}`,
   
-  // 获奖相关
+  // Event Winners
   WINNERS: '/api/winners',
   EVENT_WINNERS: (eventId) => `/api/winners/event/${eventId}`,
   
-  // 图片上传
+  // Upload Image
   UPLOAD_IMAGE: '/api/upload/image'
 }
 

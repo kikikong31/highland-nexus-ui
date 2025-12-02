@@ -223,7 +223,7 @@ export const useEventsStore = defineStore('events', () => {
     }
     registrations.value.push(newRegistration)
     
-    // 更新参赛人数
+    //  Update current participants count
     const event = events.value.find(e => e.id === registration.eventId)
     if (event) {
       event.currentParticipants++
@@ -269,12 +269,12 @@ export const useEventsStore = defineStore('events', () => {
     )
   }
 
-  // 设置比赛列表（从 API 加载）
+  // SET events list
   function setEvents(newEvents) {
     events.value = newEvents
   }
 
-  // 加载比赛列表
+  // FETCH events from API
   async function fetchEvents(params = {}) {
     try {
       const response = await eventsApi.getEvents(params)
