@@ -1,20 +1,20 @@
-# 苏格兰高地运动会管理系统
+# Scottish Highland Games Management System
 
-Highland Nexus - 一个完整的高地运动会管理系统
+Highland Nexus - A Complete Highland Games Management System
 
-## 功能特性
+## Features
 
-- 用户登录注册
-- 首页项目介绍
-- 比赛列表和详情展示
-- 在线报名系统
-- 个人中心（查看申请记录）
-- 地图展示比赛地点
-- 获奖名单展示
-- 管理员后台（CRUD 操作）
-- 中英文双语切换
+- User Login and Registration
+- Homepage/Project Introduction
+- Competition List and Details Display
+- Online Registration System
+- Personal Center (View Application Records)
+- Map Display of Competition Locations
+- Winners List Display
+- Admin Backend (CRUD Operations)
+- Chinese and English Language Switching
 
-## 技术栈
+## Tech Stack
 
 - Vue 3 (Composition API)
 - Vue Router 4
@@ -23,37 +23,37 @@ Highland Nexus - 一个完整的高地运动会管理系统
 - Vue-i18n
 - Vite
 
-## 安装运行
+## Installation and Running
 
 ```bash
-# 安装依赖
+# Install dependencies
 npm install
 
-# 启动开发服务器
+# Start development server
 npm run dev
 
-# 构建生产版本
+# Build production version
 npm run build
 
-查看后端对应启动的端口到：highland-nexus-ui\src\api\config.js中进行修改
+Check and modify the corresponding backend startup port in: highland-nexus-ui\src\api\config.js
 ```
 
-## 默认账号
+## Default Accounts
 
-- 普通用户: user@example.com / password123
-- 管理员: admin@example.com / admin123
+- Standard User: user@example.com / password123
+- Administrator: admin@example.com / admin123
 
-## 项目结构
+## Project Structure
 
 ```
 src/
-├── assets/          # 静态资源
-├── components/      # 通用组件
-├── views/          # 页面组件
-├── router/         # 路由配置
-├── stores/         # Pinia状态管理
-├── locales/        # 国际化语言文件
-├── api/            # API接口
-├── mock/           # 模拟数据
-└── utils/          # 工具函数
+├── assets/          # Static Resources
+├── components/      # General Components
+├── views/          # Page Components
+├── router/         # Router Configuration
+├── stores/         # Pinia State Management
+├── locales/        # Internationalization Language Files
+├── api/            # APIInterfaces
+├── mock/           # Mock Data
+└── utils/          # Utility Functions
 ```
