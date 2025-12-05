@@ -105,7 +105,7 @@
 
     <el-footer class="footer">
       <div class="footer-content">
-        <p>&copy; 2024 {{ $t("home.title") }}. All rights reserved.</p>
+        <p>&copy; 2026 {{ $t("home.title") }}. All rights reserved.</p>
         <p>{{ $t("home.subtitle") }}</p>
       </div>
     </el-footer>
